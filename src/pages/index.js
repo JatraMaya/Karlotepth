@@ -1,5 +1,13 @@
 import React from "react"
 
-export default function Home() {
-  return <div>Hello world!</div>
+import Layout from "../components/layout"
+
+export default () => {
+    return (
+        <div>
+            <Layout title="karlotepth" subtitle="web novel by JatraMaya">
+                isasasasas
+            </Layout>
+        </div>
+    )
 }

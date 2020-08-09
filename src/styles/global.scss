@@ -1,0 +1,75 @@
+/*
+Rewrite Bulma variable
+*/
+
+$navbar-background-color: firebrick;
+$footer-background-color: firebrick;
+$body-background-color: #111;
+$text: #fff;
+$link: #999;
+$title-color: #fff;
+$hero-body-padding: 3.5rem 1.5rem;
+
+/*
+Add Google font to the mix
+*/
+
+$family-secondary: "Charmonman", cursive;
+$family-primary: "Roboto Slab", serif;
+
+@import "../../../../framework/bulma/sass/utilities/_all.sass";
+@import "../../../../framework/bulma/sass/base/_all.sass";
+@import "../../../../framework/bulma/sass/elements/content.sass";
+@import "../../../../framework/bulma/sass/elements/container.sass";
+@import "../../../../framework/bulma/sass/elements/title.sass";
+@import "../../../../framework/bulma/sass/components/navbar.sass";
+@import "../../../../framework/bulma/sass/components/pagination.sass";
+@import "../../../../framework/bulma/sass/layout/hero.sass";
+@import "../../../../framework/bulma/sass/layout/footer.sass";
+
+/*
+My custom class
+*/
+
+.main-title {
+    &:hover,
+    &:focus {
+        color: $text !important;
+    }
+}
+
+section {
+    min-height: 60vh;
+    padding: 20px;
+    margin: 2rem 0 2.5rem 0;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menu-active {
+    background-color: $text;
+    color: $link;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    color: $text;
+    margin: 0.3rem;
+    &:hover {
+        color: $link;
+    }
+}
+
+.pagination {
+    margin-top: 3rem;
+}
+
+.pagination-link {
+    min-width: 6rem;
+}
